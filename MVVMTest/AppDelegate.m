@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "StoreTableViewController.h"
+#import "MyNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    StoreTableViewController *vc   = [[StoreTableViewController alloc]init];
+    MyNavigationController *nav    = [[MyNavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

@@ -1,0 +1,14 @@
+platform:ios, '8.0'
+
+use_frameworks!
+target 'MVVMTest' do
+
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'Masonry'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'LCProgressHUD'
+pod 'ReactiveCocoa'
+
+end

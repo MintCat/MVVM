@@ -1,0 +1,48 @@
+//
+//  header.pch
+//  MVVMTest
+//
+//  Created by ios on 2017/1/5.
+//  Copyright © 2017年 c. All rights reserved.
+//
+
+#ifndef header_pch
+#define header_pch
+
+#ifdef __OBJC__
+
+//导入RAC库
+#import "ReactiveCocoa.h"
+//导入自动布局库
+#import <Masonry/Masonry.h>
+//导入异步加载图片库
+#import "UIImageView+WebCache.h"
+//导入列表刷新加载库
+#import "MJRefresh.h"
+//导入网络请求库
+#import "AFNetworking.h"
+
+#import "MJExtension.h"
+
+#import "LCProgressHUD.h"
+
+
+#endif
+
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define ScreenWeight  [UIScreen mainScreen].bounds.size.width
+
+#define DefaultColor RGB(137, 37, 213)
+
+#define RGB(a,b,c) [UIColor colorWithRed:a/255.0f green:b/255.0f blue:c/255.0f alpha:1]
+
+//店铺列表
+#define shopListUrl @""
+//店铺logo链接
+#define  imageNameUrl @"http://www.jipigo.com/shopn/data/upload/shop/store/"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* header_pch */
